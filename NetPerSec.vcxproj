@@ -153,30 +153,7 @@
     </ClCompile>
     <ClCompile Include="winproc.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <CustomBuild Include="hlp\NetPerSec.cnt">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">copy "hlp\%(Filename).cnt" $(OutDir)</Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Copying contents file...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\$(InputName).cnt;%(Outputs)</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="hlp\NetPerSec.hpj">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">start /wait hcw /C /E /M "hlp\%(Filename).hpj" 
-if errorlevel 1 goto :Error 
-if not exist "hlp\%(Filename).hlp" goto :Error 
-copy "hlp\%(Filename).hlp" $(OutDir) 
-goto :done 
-:Error 
-echo hlp\%(Filename).hpj(1) : error: 
-type "hlp\%(Filename).log" 
-:done </Command>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Making help file...</Message>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)\$(InputName).hlp;%(Outputs)</Outputs>
-    </CustomBuild>
-    <CustomBuild Include="hlp\NetPerSec.rtf" />
-    <CustomBuild Include="res\NetPerSec.rc2" />
-  </ItemGroup>
+  
   <ItemGroup>
     <ResourceCompile Include="NetPerSec.rc" />
   </ItemGroup>
@@ -236,6 +213,9 @@ makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
     <Image Include="res\bargraph.ico" />
     <Image Include="res\histogram.ico" />
     <Image Include="res\NetPerSec.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hlp\netpersec.chm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
