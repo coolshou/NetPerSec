@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Connection Tab</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Graph Tab">
+	<PARAM NAME="Keyword" VALUE="Auto Scale">
+	<PARAM NAME="Keyword" VALUE="Current">
+	<PARAM NAME="Keyword" VALUE="Average">
+	<PARAM NAME="Keyword" VALUE="Bytes per second">
+	<PARAM NAME="Keyword" VALUE="Bits per second">
+	<PARAM NAME="Keyword" VALUE="Comparing NetPerSec's Results with Other Utilities">
+	<PARAM NAME="Keyword" VALUE="Modem Connections">
+	<PARAM NAME="Keyword" VALUE="Max">
+</OBJECT>
+
+<H1><A NAME="idh_connection_tab"></A><SUP></SUP>Graph Tab</H1>
+
+<P>The Graph Tab displays information regarding your current session.</P>
+
+<P><IMG SRC="../images/graph.gif" ALT="" BORDER=0></P>
+
+<H2><I>Sent and Received Panels</I></H2>
+
+<P>These areas display your transfer rates while on the Internet.   Clicking the right mouse button on either graph will switch to the <A HREF="netp15ia.htm">Display</A> tab.</P>
+
+<P><B>Current</B></P>
+
+<P>Displays the current bits per second, or bytes per second, being transferred.   The rate at which this information is updated can be configured using the Sampling Rate option in the <A HREF="netp4j36.htm">Options Tab</A>.</P>
+
+<P><B>Average</B></P>
+
+<P>Displays your average transfer rate.   Averages are calculated over a period of time and can therefore differ from what your browser, FTP, or other utility may be reporting.   Use the Averaging Window option on the <A HREF="netp4j36.htm">Options Tab </A> to configure this setting.  Please see the <I>Comparing NetPerSec's Results with other Utilities </I> section below for more information on averages.</P>
+
+<P><B>Max</B></P>
+
+<P>This value is the fastest sample rate currently displayed in the Sent and Received graphs.  Note that the Max values can exceed the rated speed of your modem.   Please see the <I>Modem Connections</I> section at the bottom of this page for more information.</P>
+
+<P><B>Auto Scale</B></P>
+
+<P>Each of the graphs provide an Auto Scale option which dynamically adjusts the range of the graph so that all bars, or lines, are drawn completely within the graph.  Auto Scale is recommended if you are using a high bandwidth device such as cable, DSL, or T1 line.</P>
+
+<P>Modem users may wish to manually configure the range of the graph to match the rated speed of their modem.  For example, if you have a 56 kbps modem, set the graph display mode to bps, and adjust the slider control so that the topmost value in the graph displays 56k bits/sec.   </P>
+
+<P>The slider control for the Scale is disabled if the Auto Scale option is selected, however, the slider will automatically move according to the average data rate.</P>
+
+<H2><I>Display Panel</I></H2>
+
+<P><B>Current and Average</B></P>
+
+<P>Selects which type of information is to be displayed in the graph.</P>
+
+<P><B>Bar and Line Graph</B></P>
+
+<P>Selects the type of graph to display in the Received and Sent panels.</P>
+
+<P><B>bps and Bps</B></P>
+
+<P>The current and average values reflect data throughput rates using either bits per second or bytes per second.  Throughput is the amount of data that has been sent, or received, within a specific duration of time.  The greater the throughput, the faster your Internet connection is.</P>
+
+<P>By convention, data transmission devices, such as modems and networks, are measured in <I>bits per second</I>, or <I>bps</I>.  Data storage devices, such as hard drives and memory, are measured in <I>bytes</I> and use a capital B as in <I>Bytes per second</I>, or <I>Bps</I>.  To avoid confusion, NetPerSec uses the entire word as in Bytes/sec and bits/sec when displaying values.</P>
+
+<P>When viewing data transmission rates in bits per second (bps), you are comparing the efficiency of your modem or network interface to the actual data throughput of your Internet connection.   For example, if you are using a 56 kbps modem, and want to see how well it is performing, use the bits per second option in NetPerSec.  Displaying bits per second is also helpful when playing media over the Internet such as streaming video.  If your cable connection is currently averaging about 150 kbps you'll know beforehand that selecting the high bandwidth 300 kbps movie will result in long pauses and dropped frames.  You'll get better results with the smaller 100 kbps version.</P>
+
+<P>When displaying bytes per second (Bps), you are measuring efficiency in terms of data storage and the calculations are done using binary format.  You will want to use this option when downloading files off of the Internet or moving files across a network.  The values displayed in NetPerSec will be consistent with those reported by your browser, or FTP utility, when indicating the bytes received per second.</P>
+
+<P>Values may also be combined with the standard metric prefixes: kilo, mega, and giga.  These prefixes are abbreviated using the single letters k,K,M and G.   Please see the <A HREF="netp70ab.htm">Bits, Bytes and Metric Prefixes</A> section for more information.</P>
+
+<H2><I>Comparing NetPerSec's Results with other Utilities</I></H2>
+
+<P>When comparing the average data throughput reported in NetPerSec with the results displayed in other utilities, such as your browser, or FTP program, it is very likely that the two throughput rates are different.  The reason for this is because averages are calculated by using the total bytes received, or sent, starting at a specific point in time and then dividing the amount by the elapsed time.  Since it is unlikely that both NetPerSec and the other utility began at the same exact point in time to base the average calculations on, the numbers that are reported will be different.  However, over time, usually within 10 to 15 seconds, the numbers reported from each utility will gradually begin to coincide with each other.  The most accurate method to determine data throughput is to download a large compressed file, over 1MB, from a local server, preferably from your own ISP. </P>
+
+<H2><I>Modem Connections</I></H2>
+
+<P>When using a modem connection you may occasionally notice data transmission bursts that exceed the rated speed of your modem.  This is a result of the compression and buffering used with modems and is completely normal.  You will notice that these bursts occur more frequently when viewing Web pages containing lots of text and rarely when downloading files that have already been compressed.  For best results, you should use a <A HREF="netp4j36.htm">sampling rate</A> of one second or higher, and rely on the Average throughput values when evaluating your connection speed.</P>
+
+</BODY>
+</HTML>

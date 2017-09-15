@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Graph Tab</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Options Tab">
+	<PARAM NAME="Keyword" VALUE="Sampling Rate">
+	<PARAM NAME="Keyword" VALUE="Averaging Window">
+	<PARAM NAME="Keyword" VALUE="Network Interface">
+	<PARAM NAME="Keyword" VALUE="Dial-up Networking">
+	<PARAM NAME="Keyword" VALUE="VPN Connections">
+	<PARAM NAME="Keyword" VALUE="PPPoE Connections">
+</OBJECT>
+
+<H1><A NAME="idh_options_tab"></A><SUP></SUP>Options Tab</H1>
+
+<P>Use the Options tab to fine tune NetPerSec's operation according to your connection type and preferences.</P>
+
+<P><IMG SRC="../images/options.gif" ALT="" BORDER=0></P>
+
+<H2><I>Sampling and Averaging</I></H2>
+
+<P><B>Sampling Rate</B></P>
+
+<P>Sampling Rate specifies the frequency in which NetPerSec collects network information.  The sampling intervals are denoted in seconds and range from one quarter of a second up to five seconds.  Selecting a frequency of one quarter of a second means that NetPerSec will update its results, graphs, and icon, four times every second.</P>
+
+<P>Faster sampling rates result in greater accuracy when calculating data throughput rates. A sample rate of one second provides accurate statistics and sufficient detail for the icon and graphs.  Slower samplings, above three seconds, work well under high traffic conditions such as when running on a network server since the graphs will contain samples spanning a longer period of time.</P>
+
+<P></P>
+
+<P><B>Averaging Window</B></P>
+
+<P>Averaging Window specifies the time span, or window, used when calculating the average data throughput rates. This is necessary since most systems are not continuously sending and receiving data over the network.   When viewing a Web page for example, the data transfer might last only a few seconds, or when sending an email, a minute or two.  If NetPerSec calculated averages based upon your entire session, the values would gradually diminish to zero and remain there.</P>
+
+<P>Specifying a window between 10 and 30 seconds will yield accurate results for the average.  If you are downloading lots of files, and have a fast Internet connection, you may wish to use higher values such as 60 seconds for even greater accuracy.   </P>
+
+<P><B>Network Interface</B></P>
+
+<P>Depending upon your configuration, you may wish to specify which adapter NetPerSec should monitor to collect networking statistics.</P>
+
+<P>Some network drivers record data transmission amounts under several adapter interfaces under Windows.   This causes NetPerSec, and other utilities such as netstat, to report double the amount of data actually transferred.   To determine if this is a problem with your system try the following test.   Press the Reset button on NetPerSec's <A HREF="netp3iua.htm">Graph Tab</A> and select the <I>Bytes per second</I> option.   Download a file using your browser and note the total number of bytes transmitted.  If the number of bytes in the <I>Received: </I>pane is double what your browser reported, you will need to use either the <I>Monitor dial-up networking</I>, or <I>Monitor specific adapter</I>, options below.  Note that NetPerSec may not exactly match the number of bytes reported by your browser since NetPerSec's calculations include framing characters and other network activity that your browser is not capable of monitoring.</P>
+
+<P></P>
+
+<P>Selecting a different network interface to monitor will reset all data in the <A HREF="netp3iua.htm">Graph Tab</A>.  The totals for the received and sent values will reset to the amounts for your entire Windows session. </P>
+
+<P><B>Monitor all network activity.</B></P>
+
+<P>This is the default option for NetPerSec.   All adapters configured in your system are monitored for network activity.</P>
+
+<P><B>Monitor dial-up networking only.</B></P>
+
+<P>NetPerSec will collect data throughput statistics using performance counters contained in the system registry.   If you use Window's <I>Dial-up Networking</I>, or if your Internet connection requires <I>Point-to-point protocol over Ethernet </I>(PPPoE), you may wish to use this option.   </P>
+
+<P>NetPerSec only supports a single dial-up adapter.  If you have installed multiple dial-up adapters, you may need to use one of the other network interface options listed in this section.   Windows 95 users must have the <A HREF="netp0l83.htm">Dial-up Networking Upgrade</A> installed.</P>
+
+<P><B>Monitor specific adapter. </B></P>
+
+<P>A list of adapters configured in your system will appear in a combo box next to this option. NetPerSec will only monitor the specific adapter selected from this list.   Note that you may have duplicate entries in the list, such as several <I>PPP Adapters</I>.   You will need to experiment with the different adapters in order to determine the entry used by your Internet connection.   Users who connect to their ISP using <I>Virtual Private Networking</I> (VPN) may need to select this option.</P>
+
+<P>If you are using Windows 2000, your Dial-up and other adapters may not be present in the list until you have previously established a connection using the adapter.   Also, Windows 9.x users may observe several extraneous characters appended to the name of certain adapters.  This is a problem with the Windows SNMP drivers and may be ignored.</P>
+
+<P></P>
+
+</BODY>
+</HTML>

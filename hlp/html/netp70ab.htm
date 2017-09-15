@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; charset=Windows-1252">
+<TITLE>Bits, Bytes, and the Metric Prefixes</TITLE>
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+
+<OBJECT TYPE="application/x-oleobject" CLASSID="clsid:1e2a7bd0-dab9-11d0-b93a-00c04fc99f9e">
+	<PARAM NAME="Keyword" VALUE="Bits, Bytes, and the Metric Prefixes">
+</OBJECT>
+
+<H1><A NAME="idh_bits__bytes__and_the_metric_prefixes"></A>Bits, Bytes, and the Metric Prefixes</H1>
+
+<P>NetPerSec displays data throughput using both <I>bits per second </I>and <I>bytes per second </I>in conjunction with the standard metric prefixes G, M, and k.    These prefixes have the following definitions:</P>
+
+<PRE><CODE>            <B><U>Decimal Values</U></B>
+
+    kilo (k)    = 1,000 or thousand
+    mega (M)    = 1,000,000 or million
+    giga (G)    = 1,000,000,000 or billion</CODE></PRE>
+
+<P>When displaying <I>bits per second</I>, the metric prefixes are interpreted using their <B>decimal</B> values, as show above.   However, when displaying <I>bytes per second, </I>the prefixes are interpreted using their <B>binary</B> values.</P>
+
+<PRE><CODE><B><U>Binary Values
+
+</U></B>kilo (K)    = 1,024 
+mega (M)    = 1,048,576 
+giga (G)    = 1,073,741,824 
+</CODE></PRE>
+
+<P>Note that the binary prefix for kilo uses the uppercase letter <B>K</B> while the decimal notation uses the lowercase <B>k</B>.  An uppercase K is the standard method to indicate binary kilobytes.</P>
+
+<P>By convention, data transmission devices, such as modems and networks, are measured in terms of bits per second and use the <B>decimal</B> metric prefixes.  Data storage devices, such as hard drives and memory, are measured in bytes, and use the <B>binary</B> metric prefixes.</P>
+
+<P>NetPerSec uses the following terms and values in its calculations:</P>
+
+<PRE><CODE>    <U>Prefix   Abbreviation   Size</U>
+    bit         b        0 or 1
+    Byte        B        8 bits
+    kilobit    kb        1,000 bits (decimal)
+    Kilobyte    KB        1,024 bytes (binary)
+    Megabit    Mb        1,000,000 bits (decimal)
+    Megabyte    MB        1,048,576 bytes (binary)
+    Gigabit    Gb        1,000,000,000 bits (decimal)
+    Gigabyte    GB        1,073,741,824 bytes (binary)</CODE></PRE>
+
+<P></P>
+
+<P>Therefore, if the current data throughput rate is 56 kbps, the binary equivalent would be displayed as 6.8 KBps.   The calculation is performed using 56000(kbps) divided by 1024(KB) divided by 8(Bytes).  </P>
+
+</BODY>
+</HTML>
