@@ -1,11 +1,11 @@
-# NetPerSec, Version 1.1
+# NetPerSec, Version 1.2
 Copyright (c) 2001 Ziff Davis Media, Inc.  
 Written by Mark Sweeney  
 First Published in PC Magazine, US Edition, January 16, 2001, v20n02  
 [http://www.pcmag.com/utilities/](http://www.pcmag.com/utilities/)
 
 ## PLATFORMS:
-Windows 95, Windows 98, Windows ME, Windows NT 4, Windows 2000
+Windows 7 ~ Windows 10
 
 ## DESCRIPTION:
 NetPerSec measures the real-time speed of your Internet connection. Different types of connections promise different communication speeds, but is this what you're actually getting? Due to network traffic, actual speeds are often slower than what is promised. Cable modems are fast if not many of your neighbors are sharing the line, but can slow down considerably with a heavy load. How do you know when it's time to switch to DSL? NetPerSec lets you check your connection speed in real time. It monitors all TCP/IP activity to and from the Internet or other networks, and graphs the communication speed. Its dynamic tray icon shows send and receive activity with a bar graph or a histogram. For details, open the program's main window to view current and average send and receive speeds in a configurable, graphical display. You can adjust the sampling rate and the amount of data used to compute the average.
@@ -41,23 +41,8 @@ To install NetPerSec, run the supplied installation program SETUP.EXE. To uninst
 
 ## FILE LIST:
 <table><tbody>
-<tr><td>SETUP.EXE</td><td>NetPerSec setup file (run this)</td></tr>
-<tr><td>SETUP.INI</td><td>NetPerSec setup file</td></tr>
-<tr><td>setup.ins</td><td>NetPerSec setup file</td></tr>
-<tr><td>setup.lid</td><td>NetPerSec setup file</td></tr>
-<tr><td>DATA.TAG</td><td>NetPerSec setup file</td></tr>
-<tr><td>data1.cab</td><td>NetPerSec setup file</td></tr>
-<tr><td>lang.dat</td><td>NetPerSec setup file</td></tr>
-<tr><td>layout.bin</td><td>NetPerSec setup file</td></tr>
-<tr><td>os.dat</td><td>NetPerSec setup file</td></tr>
-<tr><td>_INST32I.EX_</td><td>NetPerSec setup file</td></tr>
-<tr><td>_ISDEL.EXE</td><td>NetPerSec setup file</td></tr>
-<tr><td>_SETUP.DLL</td><td>NetPerSec setup file</td></tr>
-<tr><td>_sys1.cab</td><td>NetPerSec setup file</td></tr>
-<tr><td>_user1.cab</td><td>NetPerSec setup file</td></tr>
-<tr><td>readme.txt</td><td>the file you are reading</td></tr>
-<tr><td>license.txt</td><td>PC Magazine Utilities license agreement</td></tr>
-<tr><td>nps_src.zip</td><td>NetPerSec source code (for programmers)</td></tr>
+<tr><td>NetPerSec.exe</td><td>NetPerSec main exe file</td></tr>
+<tr><td>NetPerSec.chm</td><td>NetPerSec help file</td></tr>
 </tbody></table>
 
 ## SUPPORT:
