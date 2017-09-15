@@ -153,7 +153,6 @@
     </ClCompile>
     <ClCompile Include="winproc.cpp" />
   </ItemGroup>
-  
   <ItemGroup>
     <ResourceCompile Include="NetPerSec.rc" />
   </ItemGroup>
@@ -216,6 +215,7 @@ makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;"hlp\$(TargetName).hm" </Command>
   </ItemGroup>
   <ItemGroup>
     <None Include="hlp\netpersec.chm" />
+    <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
