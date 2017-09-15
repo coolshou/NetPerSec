@@ -1,17 +1,17 @@
- 
-// Commands (ID_* and IDM_*) 
+  
+// Commands (ID_* and IDM_*)  
 HIDM_ABOUTBOX                           0x10010
 HID_PROPERTIES                          0x18006
 HIDM_ABOUT                              0x18007
- 
-// Prompts (IDP_*) 
+  
+// Prompts (IDP_*)  
 HIDP_SOCKETS_INIT_FAILED                0x30067
- 
-// Resources (IDR_*) 
+  
+// Resources (IDR_*)  
 HIDR_MAINFRAME                          0x20080
 HIDR_MENU1                              0x20081
- 
-// Dialogs (IDD_*) 
+  
+// Dialogs (IDD_*)  
 HIDD_ABOUTBOX                           0x20064
 HIDD_NETWORKLIGHTS_DIALOG               0x20066
 HIDD_CONFIG_DLG                         0x20066
@@ -22,5 +22,5 @@ HIDD_OPTIONS_DLG                        0x2006C
 HIDD_GRAPH_DLG                          0x2006D
 HIDD_COLOR_DLG                          0x2006D
 HIDD_COLORCUBE_DLG                      0x20091
- 
-// Frame Controls (IDW_*) 
+  
+// Frame Controls (IDW_*)  
