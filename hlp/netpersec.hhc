@@ -1,0 +1,37 @@
+<HTML>
+<!--Sitemap 1.0-->
+<OBJECT type="text/site properties">
+</OBJECT>
+<UL>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Using NetPerSec">
+		<param name="Local" value="html/netp0rub.htm">
+		</OBJECT>
+		<A HREF="html/netp0rub.htm">Using NetPerSec</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="NetPerSec's Icon">
+		<param name="Local" value="html/netp7fou.htm">
+		</OBJECT>
+		<A HREF="html/netp7fou.htm">NetPerSec's Icon</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Graph Tab">
+		<param name="Local" value="html/netp3iua.htm">
+		</OBJECT>
+		<A HREF="html/netp3iua.htm">Graph Tab</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Options Tab">
+		<param name="Local" value="html/netp4j36.htm">
+		</OBJECT>
+		<A HREF="html/netp4j36.htm">Options Tab</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Display Tab">
+		<param name="Local" value="html/netp15ia.htm">
+		</OBJECT>
+		<A HREF="html/netp15ia.htm">Display Tab</A><BR>
+	<LI><OBJECT type="text/sitemap">
+		<param name="Name" value="Requirements and Troubleshooting">
+		<param name="Local" value="html/netp0l83.htm">
+		</OBJECT>
+		<A HREF="html/netp0l83.htm">Requirements and Troubleshooting</A><BR>
+</UL>
+</HTML>
